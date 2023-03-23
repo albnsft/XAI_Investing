@@ -1,0 +1,428 @@
+C:\Users\alban\PycharmProjects\FDL\venv\Scripts\python.exe C:/Users/alban/PycharmProjects/XAI_Trading/main.py
+AAPL number of instances: 5036
+GOOG number of instances: 4661
+Fitting 5 folds for each of 324 candidates, totalling 1620 fits
+Top 5 models leading to the maximum accuracy on 5 CV: 
+    mean_accuracy  std_accuracy  clf__max_depth  clf__max_features  clf__max_samples  clf__min_samples_split  clf__n_estimators
+55       0.513597      0.022667             4.0               0.75              0.25                    0.01              200.0
+23       0.511876      0.025866             4.0               0.25              0.75                    0.05              300.0
+22       0.511876      0.023839             4.0               0.25              0.75                    0.05              200.0
+72       0.511876      0.031050             4.0               0.75              0.75                    0.01              100.0
+42       0.511188      0.024195             4.0               0.50              0.50                    0.10              100.0
+************************ On Validation set *********************************
+The number of trades is 146, there is a total of 728 ticks
+The absolute performance of the strategy with tc is -17.4%
+The outperformance of the strategy with tc is -115.0%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 193, there is a total of 730 ticks
+The absolute performance of the strategy with tc is -2.8%
+The outperformance of the strategy with tc is -109.2%
+****************************************************************************************************
+******************** Permutation Feature Importance ********************
+                  feature_importance  ci_fixed
+STOCH                       0.030059  0.002908
+ChaikinMoneyFlow            0.016095  0.002893
+Returns_1                   0.013728  0.003001
+RSI                         0.011775  0.005821
+MACD                        0.006272  0.005126
+Direction_5                 0.005207  0.001645
+ATR                         0.003787  0.002774
+Direction_1                 0.001657  0.000407
+Williams %R                 0.001361  0.004975
+OBV                         0.001243  0.001012
+Direction_2                 0.001065  0.000880
+Direction_3                 0.000355  0.001033
+Direction_21                0.000000  0.000000
+EWMA_14                     0.000000  0.000000
+EWMA_21                     0.000000  0.000000
+EWMA_7                      0.000000  0.000000
+Volatility_14              -0.008107  0.003259
+Removable features according to selector: 
+               feature_importance  ci_fixed
+Direction_21             0.000000  0.000000
+EWMA_7                   0.000000  0.000000
+EWMA_14                  0.000000  0.000000
+EWMA_21                  0.000000  0.000000
+Volatility_14           -0.008107  0.003259
+Increase of accuracy by removing features: 
+    accuracy_diff                                          removed_columns
+30       0.099037  [Direction_21, EWMA_7, EWMA_14, EWMA_21, Volatility_14]
+25       0.089409                 [Direction_21, EWMA_7, EWMA_14, EWMA_21]
+29       0.086657                [EWMA_7, EWMA_14, EWMA_21, Volatility_14]
+21       0.083906                               [EWMA_7, EWMA_14, EWMA_21]
+10       0.057772                                        [EWMA_7, EWMA_21]
+For ['AAPL'] removing ['Direction_21', 'EWMA_7', 'EWMA_14', 'EWMA_21', 'Volatility_14'] had the highest increased (by [0.09903714]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.523246        0.0196
+************************ On Validation set *********************************
+The number of trades is 108, there is a total of 728 ticks
+The absolute performance of the strategy with tc is 170.5%
+The outperformance of the strategy with tc is 72.9%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 98, there is a total of 730 ticks
+The absolute performance of the strategy with tc is 271.3%
+The outperformance of the strategy with tc is 164.8%
+****************************************************************************************************
+******************** Impurity Feature importance ********************
+                  feature_importance  ci_fixed
+Williams %R                 0.129491  0.019854
+Returns_1                   0.106502  0.015847
+Volatility_14               0.102010  0.016256
+ChaikinMoneyFlow            0.098394  0.015502
+STOCH                       0.095654  0.013899
+ATR                         0.092621  0.016178
+MACD                        0.084300  0.015721
+OBV                         0.072779  0.014382
+RSI                         0.068492  0.013408
+EWMA_21                     0.056160  0.010973
+EWMA_7                      0.040286  0.009626
+EWMA_14                     0.037992  0.009500
+Direction_5                 0.009639  0.004465
+Direction_2                 0.002555  0.002076
+Direction_3                 0.001624  0.001966
+Direction_21                0.001159  0.001211
+Direction_1                 0.000341  0.000667
+Removable features according to selector: 
+              feature_importance  ci_fixed
+Direction_5             0.009639  0.004465
+Direction_2             0.002555  0.002076
+Direction_3             0.001624  0.001966
+Direction_21            0.001159  0.001211
+Direction_1             0.000341  0.000667
+Increase of accuracy by removing features: 
+    accuracy_diff                                                     removed_columns
+24      -0.002751                            [Direction_3, Direction_21, Direction_1]
+30      -0.004127  [Direction_5, Direction_2, Direction_3, Direction_21, Direction_1]
+10      -0.005502                                         [Direction_2, Direction_21]
+28      -0.005502               [Direction_5, Direction_3, Direction_21, Direction_1]
+8       -0.005502                                          [Direction_5, Direction_1]
+For ['AAPL'] removing ['Direction_3', 'Direction_21', 'Direction_1'] had the highest increased (by [-0.00275103]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.487208      0.020722
+************************ On Validation set *********************************
+The number of trades is 190, there is a total of 728 ticks
+The absolute performance of the strategy with tc is -31.7%
+The outperformance of the strategy with tc is -129.4%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 235, there is a total of 730 ticks
+The absolute performance of the strategy with tc is 59.2%
+The outperformance of the strategy with tc is -47.3%
+****************************************************************************************************
+******************** LIME Feature Importance ********************
+Requested sample size larger than
+                              size of input data. Using all data
+                  feature_importance  ci_fixed
+OBV                         0.008807  0.000165
+Williams %R                 0.008707  0.000205
+Returns_1                   0.007108  0.000132
+ATR                         0.007077  0.000142
+EWMA_21                     0.004977  0.000110
+MACD                        0.004743  0.000116
+RSI                         0.004429  0.000087
+STOCH                       0.002852  0.000075
+Volatility_14               0.002401  0.000071
+Direction_5                 0.002074  0.000055
+ChaikinMoneyFlow            0.001913  0.000052
+EWMA_14                     0.001502  0.000062
+EWMA_7                      0.001102  0.000057
+Direction_3                 0.000515  0.000029
+Direction_21                0.000495  0.000028
+Direction_2                 0.000460  0.000027
+Direction_1                 0.000443  0.000026
+Removable features according to selector: 
+              feature_importance  ci_fixed
+EWMA_7                  0.001102  0.000057
+Direction_3             0.000515  0.000029
+Direction_21            0.000495  0.000028
+Direction_2             0.000460  0.000027
+Direction_1             0.000443  0.000026
+Increase of accuracy by removing features: 
+    accuracy_diff                                                removed_columns
+30       0.027510  [EWMA_7, Direction_3, Direction_21, Direction_2, Direction_1]
+0        0.013755                                                       [EWMA_7]
+26       0.011004               [EWMA_7, Direction_3, Direction_21, Direction_1]
+25       0.004127               [EWMA_7, Direction_3, Direction_21, Direction_2]
+27       0.004127                [EWMA_7, Direction_3, Direction_2, Direction_1]
+For ['AAPL'] removing ['EWMA_7', 'Direction_3', 'Direction_21', 'Direction_2', 'Direction_1'] had the highest increased (by [0.02751032]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0        0.49436      0.022121
+************************ On Validation set *********************************
+The number of trades is 248, there is a total of 728 ticks
+The absolute performance of the strategy with tc is -23.7%
+The outperformance of the strategy with tc is -121.3%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 273, there is a total of 730 ticks
+The absolute performance of the strategy with tc is 25.7%
+The outperformance of the strategy with tc is -80.8%
+****************************************************************************************************
+******************** SHAP Feature Importance ********************
+                  feature_importance  ci_fixed
+EWMA_21                     0.045777  0.000191
+ATR                         0.015161  0.000441
+MACD                        0.013378  0.000664
+EWMA_7                      0.011658  0.000150
+EWMA_14                     0.011194  0.000155
+RSI                         0.010796  0.000239
+OBV                         0.010447  0.000233
+Williams %R                 0.010201  0.000627
+STOCH                       0.005841  0.000342
+Returns_1                   0.005559  0.000315
+ChaikinMoneyFlow            0.003288  0.000181
+Volatility_14               0.003171  0.000256
+Direction_5                 0.002276  0.000056
+Direction_2                 0.000468  0.000027
+Direction_3                 0.000465  0.000018
+Direction_1                 0.000238  0.000013
+Direction_21                0.000166  0.000011
+Removable features according to selector: 
+              feature_importance  ci_fixed
+Direction_5             0.002276  0.000056
+Direction_2             0.000468  0.000027
+Direction_3             0.000465  0.000018
+Direction_1             0.000238  0.000013
+Direction_21            0.000166  0.000011
+Increase of accuracy by removing features: 
+    accuracy_diff                                                     removed_columns
+24      -0.002751                            [Direction_3, Direction_1, Direction_21]
+30      -0.004127  [Direction_5, Direction_2, Direction_3, Direction_1, Direction_21]
+7       -0.005502                                          [Direction_5, Direction_1]
+11      -0.005502                                         [Direction_2, Direction_21]
+28      -0.005502               [Direction_5, Direction_3, Direction_1, Direction_21]
+For ['AAPL'] removing ['Direction_3', 'Direction_1', 'Direction_21'] had the highest increased (by [-0.00275103]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.487208      0.020722
+************************ On Validation set *********************************
+The number of trades is 190, there is a total of 728 ticks
+The absolute performance of the strategy with tc is -31.7%
+The outperformance of the strategy with tc is -129.4%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 235, there is a total of 730 ticks
+The absolute performance of the strategy with tc is 59.2%
+The outperformance of the strategy with tc is -47.3%
+****************************************************************************************************
+end
+Fitting 5 folds for each of 324 candidates, totalling 1620 fits
+Top 5 models leading to the maximum accuracy on 5 CV: 
+     mean_accuracy  std_accuracy  clf__max_depth  clf__max_features  clf__max_samples  clf__min_samples_split  clf__n_estimators
+218       0.513915      0.018441             8.0               0.75              0.25                    0.01              300.0
+217       0.510204      0.020759             8.0               0.75              0.25                    0.01              200.0
+111       0.509833      0.025150             6.0               0.50              0.25                    0.05              100.0
+240       0.508720      0.025341             8.0               0.75              0.75                    0.10              100.0
+136       0.508349      0.020425             6.0               0.75              0.25                    0.01              200.0
+************************ On Validation set *********************************
+The number of trades is 148, there is a total of 675 ticks
+The absolute performance of the strategy with tc is 35.8%
+The outperformance of the strategy with tc is 4.7%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 96, there is a total of 674 ticks
+The absolute performance of the strategy with tc is -14.4%
+The outperformance of the strategy with tc is -24.9%
+****************************************************************************************************
+******************** Permutation Feature Importance ********************
+                  feature_importance  ci_fixed
+Direction_2                 0.006395  0.002204
+Direction_5                 0.006337  0.001364
+STOCH                       0.003372  0.004663
+Direction_21                0.002326  0.001529
+ATR                         0.000698  0.002917
+OBV                         0.000000  0.000000
+EWMA_14                    -0.001047  0.000716
+EWMA_7                     -0.001744  0.000806
+EWMA_21                    -0.002326  0.001206
+ChaikinMoneyFlow           -0.004826  0.005241
+Direction_3                -0.006047  0.001749
+RSI                        -0.008721  0.004572
+Direction_1                -0.009826  0.001611
+Returns_1                  -0.014070  0.007242
+Williams %R                -0.022733  0.004180
+MACD                       -0.038605  0.005956
+Volatility_14              -0.043430  0.003771
+Removable features according to selector: 
+                  feature_importance  ci_fixed
+OBV                         0.000000  0.000000
+EWMA_14                    -0.001047  0.000716
+EWMA_7                     -0.001744  0.000806
+EWMA_21                    -0.002326  0.001206
+ChaikinMoneyFlow           -0.004826  0.005241
+Direction_3                -0.006047  0.001749
+RSI                        -0.008721  0.004572
+Direction_1                -0.009826  0.001611
+Returns_1                  -0.014070  0.007242
+Williams %R                -0.022733  0.004180
+MACD                       -0.038605  0.005956
+Volatility_14              -0.043430  0.003771
+Increase of accuracy by removing features: 
+      accuracy_diff                                                               removed_columns
+3590       0.065282  [OBV, EWMA_7, Direction_3, RSI, Direction_1, Returns_1, MACD, Volatility_14]
+2817       0.063798                     [OBV, EWMA_7, EWMA_21, RSI, Direction_1, Returns_1, MACD]
+2279       0.062315                     [EWMA_14, Direction_3, RSI, Direction_1, Returns_1, MACD]
+2461       0.062315                     [EWMA_21, Direction_3, RSI, Direction_1, Returns_1, MACD]
+1710       0.059347                                 [OBV, EWMA_14, EWMA_21, RSI, Returns_1, MACD]
+For ['GOOG'] removing ['OBV', 'EWMA_7', 'Direction_3', 'RSI', 'Direction_1', 'Returns_1', 'MACD', 'Volatility_14'] had the highest increased (by [0.0652819]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.507122      0.032116
+************************ On Validation set *********************************
+The number of trades is 192, there is a total of 675 ticks
+The absolute performance of the strategy with tc is 247.2%
+The outperformance of the strategy with tc is 216.1%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 218, there is a total of 674 ticks
+The absolute performance of the strategy with tc is 111.7%
+The outperformance of the strategy with tc is 101.1%
+****************************************************************************************************
+******************** Impurity Feature importance ********************
+                  feature_importance  ci_fixed
+Volatility_14               0.108572  0.007802
+ChaikinMoneyFlow            0.108368  0.008511
+STOCH                       0.105566  0.008666
+ATR                         0.102992  0.007896
+Returns_1                   0.097580  0.007453
+MACD                        0.096303  0.007272
+Williams %R                 0.091785  0.007457
+OBV                         0.065907  0.006249
+RSI                         0.064788  0.006077
+EWMA_21                     0.052271  0.005888
+EWMA_7                      0.046440  0.005756
+EWMA_14                     0.043129  0.005116
+Direction_2                 0.004065  0.001583
+Direction_3                 0.004011  0.001374
+Direction_5                 0.003643  0.001291
+Direction_21                0.003030  0.001225
+Direction_1                 0.001550  0.000829
+Removable features according to selector: 
+              feature_importance  ci_fixed
+Direction_2             0.004065  0.001583
+Direction_3             0.004011  0.001374
+Direction_5             0.003643  0.001291
+Direction_21            0.003030  0.001225
+Direction_1             0.001550  0.000829
+Increase of accuracy by removing features: 
+    accuracy_diff                                                     removed_columns
+25       0.037092               [Direction_2, Direction_3, Direction_5, Direction_21]
+30       0.034125  [Direction_2, Direction_3, Direction_5, Direction_21, Direction_1]
+27       0.031157               [Direction_2, Direction_3, Direction_21, Direction_1]
+4        0.031157                                                       [Direction_1]
+29       0.029674               [Direction_3, Direction_5, Direction_21, Direction_1]
+For ['GOOG'] removing ['Direction_2', 'Direction_3', 'Direction_5', 'Direction_21'] had the highest increased (by [0.03709199]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.503858      0.021838
+************************ On Validation set *********************************
+The number of trades is 114, there is a total of 675 ticks
+The absolute performance of the strategy with tc is 39.3%
+The outperformance of the strategy with tc is 8.1%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 94, there is a total of 674 ticks
+The absolute performance of the strategy with tc is 9.1%
+The outperformance of the strategy with tc is -1.5%
+****************************************************************************************************
+******************** LIME Feature Importance ********************
+Requested sample size larger than
+                              size of input data. Using all data
+                  feature_importance  ci_fixed
+STOCH                       0.009812  0.000237
+Returns_1                   0.006544  0.000154
+ATR                         0.006508  0.000245
+Williams %R                 0.005822  0.000137
+EWMA_21                     0.003576  0.000109
+OBV                         0.003109  0.000104
+MACD                        0.002446  0.000149
+ChaikinMoneyFlow            0.002325  0.000072
+Volatility_14               0.001837  0.000076
+Direction_2                 0.001513  0.000057
+RSI                         0.001459  0.000078
+EWMA_14                     0.000949  0.000052
+EWMA_7                      0.000917  0.000054
+Direction_3                 0.000577  0.000035
+Direction_1                 0.000568  0.000034
+Direction_5                 0.000509  0.000030
+Direction_21                0.000498  0.000032
+Removable features according to selector: 
+              feature_importance  ci_fixed
+EWMA_7                  0.000917  0.000054
+Direction_3             0.000577  0.000035
+Direction_1             0.000568  0.000034
+Direction_5             0.000509  0.000030
+Direction_21            0.000498  0.000032
+Increase of accuracy by removing features: 
+    accuracy_diff                      removed_columns
+20       0.045994  [EWMA_7, Direction_5, Direction_21]
+16       0.043027   [EWMA_7, Direction_3, Direction_5]
+17       0.037092  [EWMA_7, Direction_3, Direction_21]
+18       0.035608   [EWMA_7, Direction_1, Direction_5]
+15       0.032641   [EWMA_7, Direction_3, Direction_1]
+For ['GOOG'] removing ['EWMA_7', 'Direction_5', 'Direction_21'] had the highest increased (by [0.04599407]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.515134       0.02555
+************************ On Validation set *********************************
+The number of trades is 34, there is a total of 675 ticks
+The absolute performance of the strategy with tc is 46.1%
+The outperformance of the strategy with tc is 14.9%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 24, there is a total of 674 ticks
+The absolute performance of the strategy with tc is 11.4%
+The outperformance of the strategy with tc is 0.8%
+****************************************************************************************************
+******************** SHAP Feature Importance ********************
+                  feature_importance  ci_fixed
+MACD                        0.014709  0.001265
+ATR                         0.012299  0.000481
+EWMA_21                     0.010180  0.000271
+Returns_1                   0.009573  0.000442
+OBV                         0.009112  0.000354
+STOCH                       0.007929  0.000565
+ChaikinMoneyFlow            0.005571  0.000381
+Volatility_14               0.004766  0.000264
+Williams %R                 0.004343  0.000322
+RSI                         0.004207  0.000372
+EWMA_7                      0.003469  0.000189
+EWMA_14                     0.002126  0.000164
+Direction_2                 0.001982  0.000059
+Direction_21                0.000661  0.000030
+Direction_3                 0.000410  0.000020
+Direction_1                 0.000333  0.000015
+Direction_5                 0.000264  0.000017
+Removable features according to selector: 
+              feature_importance  ci_fixed
+Direction_2             0.001982  0.000059
+Direction_21            0.000661  0.000030
+Direction_3             0.000410  0.000020
+Direction_1             0.000333  0.000015
+Direction_5             0.000264  0.000017
+Increase of accuracy by removing features: 
+    accuracy_diff                                                     removed_columns
+26       0.037092               [Direction_2, Direction_21, Direction_3, Direction_5]
+30       0.034125  [Direction_2, Direction_21, Direction_3, Direction_1, Direction_5]
+3        0.031157                                                       [Direction_1]
+25       0.031157               [Direction_2, Direction_21, Direction_3, Direction_1]
+29       0.029674               [Direction_21, Direction_3, Direction_1, Direction_5]
+For ['GOOG'] removing ['Direction_2', 'Direction_21', 'Direction_3', 'Direction_5'] had the highest increased (by [0.03709199]) on the accuracy of validation set
+5 CV results: 
+    mean_accuracy  std_accuracy
+0       0.503858      0.021838
+************************ On Validation set *********************************
+The number of trades is 114, there is a total of 675 ticks
+The absolute performance of the strategy with tc is 39.3%
+The outperformance of the strategy with tc is 8.1%
+****************************************************************************************************
+************************ On Testing set *********************************
+The number of trades is 94, there is a total of 674 ticks
+The absolute performance of the strategy with tc is 9.1%
+The outperformance of the strategy with tc is -1.5%
+****************************************************************************************************
+end
